@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | ณัฏชานนท์</title>
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="กลับไปด้านบน">
+      <span class="logo-bracket">&lt;</span><span class="logo-text">LIMUX</span><span class="logo-bracket">/&gt;</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">เกี่ยวกับ</a>
+      <a href="#skills">ทักษะ</a>
+      <a href="#projects">ผลงาน</a>
+      <a href="#contact" class="cta">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="ส่วนแนะนำตัว">
+      <div class="hero-inner">
+        <p class="eyebrow">Portfolio · วิทยาศาสตร์ · วิศวะกรรม</p>
+        <h1 class="glow">ณัฏชานนท์ จีบสุวรรณ <span>(มุค)</span></h1>
+        <p class="subtitle">Junior Full‑Stack · สนใจวิศวะไฟฟ้า &amp; วิศวะคอมพิวเตอร์</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">ชมผลงาน</a>
+          <a href="#contact" class="btn ghost">ติดต่อ</a>
+        </div>
+        <ul class="quick-info">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-4 0-12 2-12 6v2h24v-2c0-4-8-6-12-6z"/></svg>
+             <a href="https://www.instagram.com/li.mux_kub?igsh=MWI2bXdhYnZiOTk1Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram : @li.mux_kub</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13L2 6.76V18h20V6.76L12 13zm0-2l10-6H2l10 6z"/></svg>
+            <a href="mailto:natchanonForworkLimux@gmail.com">Email : ForworkLimux@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.7 4 .7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.4.3 2.8.7 4 .1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+            <a href="tel:+66639614664">Phone : (+66) 63‑961‑4664</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>เกี่ยวกับผม</h2>
+        <p>
+          สวัสดีครับ ผม <strong>มุค</strong> — <em>ณัฏชานนท์ จีบสุวรรณ</em> นักพัฒนา <strong>Junior Full‑Stack</strong> ชื่นชอบใน
+          <strong>วิศวกรรมคอมพิวเตอร์</strong> และ <strong>วิศวกรรมไฟฟ้า</strong> ผมสนุกกับการสร้างระบบที่
+          เชื่อมฮาร์ดแวร์กับซอฟต์แวร์เข้าด้วยกัน บนพื้นฐานแนวคิดวิทยาศาสตร์
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>ทักษะที่มี</h2>
+        <ul class="skill-chips">
+          <li>C</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>JSON</li>
+          <li>Java</li>
+          <li>Root</li>
+          <li>Full‑Stack Basics</li>
+          <li>IoT &amp; Embedded</li>
+          <li>Robotics</li>
+        </ul>
+        <div class="skill-bars" aria-label="ระดับความถนัดโดยประมาณ">
+          <div class="bar"><span style="--val:80%">JavaScript</span></div>
+          <div class="bar"><span style="--val:85%">Python</span></div>
+          <div class="bar"><span style="--val:70%">C</span></div>
+          <div class="bar"><span style="--val:65%">Java</span></div>
+          <div class="bar"><span style="--val:75%">IoT / Robotics</span></div>
+          <div class="bar"><span style="--val:65%">Full‑Stack</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>ผลงานเด่น</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card-bg"></div>
+            <header>
+              <h3>Smart‑Home: สั่งเปิด‑ปิดไฟด้วยเสียง</h3>
+              <span class="tag">IoT · Voice</span>
+            </header>
+            <p>ระบบบ้านอัจฉริยะ เชื่อมต่อไมโครคอนโทรลเลอร์กับบริการสั่งงานด้วยเสียง เพื่อควบคุมไฟและอุปกรณ์พื้นฐาน เน้นความเสถียรและความปลอดภัยของผู้ใช้</p>
+            <ul class="meta">
+              <li>ESP/MCU</li><li>Cloud</li><li>Node/JS</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-bg"></div>
+            <header>
+              <h3>Bluetooth‑Jammer</h3>
+              <span class="tag">Security Lab</span>
+            </header>
+            <p>โปรเจกต์นี้ทำเพื่อการศึกษาเท่านั้น มันคืออุปกรณ์รบกวนสัญญาณBluetoothทำให้อุปกรณ์นั้นหยุดทำงานชั่วขณะ <em>ข้อจำกัด</em> และความเสี่ยงของเครือข่าย Bluetooth เท่านั้น
+              <strong>ไม่สนับสนุนการใช้งานที่ผิดกฎหมาย</strong> และไม่มีการเปิดเผยรายละเอียดทางเทคนิคที่ใช้โจมตี</p>
+            <ul class="meta">
+              <li>RF</li><li>Protocol</li><li>Ethics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-bg"></div>
+            <header>
+              <h3>หุ่นยนต์กู้ภัย (Rescue Robot)</h3>
+              <span class="tag">Robotics</span>
+            </header>
+            <p>ต้นแบบหุ่นยนต์กู้ภัยพร้อมแขนกลติดเครื่องมือตัดวัสดุแข็ง และมือช่วยพยุงผู้ประสบภัย ออกแบบให้ควบคุมแม่นยำ ทนทาน และปลอดภัยต่อการใช้งาน</p>
+            <ul class="meta">
+              <li>Manipulator</li><li>Control</li><li>Mechanics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-bg"></div>
+            <header>
+              <h3>หุ่นยนต์สายลับ (Wall‑Crawler)</h3>
+              <span class="tag">Robotics</span>
+            </header>
+            <p>หุ่นยนต์สายลับที่ใช้ล้อติดผนัง ออกแบบให้ทำงานเงียบมาก เหมาะสำหรับภารกิจตรวจการณ์—เน้นระบบยึดเกาะ การทรงตัว และเสียงรบกวนต่ำ</p>
+            <ul class="meta">
+              <li>Mechatronics</li><li>Sensors</li><li>Silent Drive</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>ติดต่อ</h2>
+        <div class="contact-box">
+          <div class="contact-left">
+            <p>เปิดรับงานและร่วมโปรเจกต์ใหม่ ๆ หากสนใจสามารถติดต่อได้ตามช่องทางด้านขวา หรือส่งอีเมลมาได้เลย</p>
+          </div>
+          <ul class="contact-right">
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/li.mux_kub?igsh=MWI2bXdhYnZiOTk1Zg%3D%3D&utm_source=qr" target="_blank" rel="noopener">@li.mux_kub</a></li>
+            <li><strong>Email:</strong> <a href="mailto:natchanonForworkLimux@gmail.com">ForworkLimux@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+66639614664">(+66) 63‑961‑4664</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> LiMux · ณัฏชานนท์ จีบสุวรรณ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
