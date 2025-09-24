@@ -1,4 +1,3 @@
-// ===== Smooth scroll for internal links =====
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
@@ -9,10 +8,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ===== Year in footer =====
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// ===== High-tech particle grid background =====
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d', { alpha: true });
 let w, h, dpr, points;
@@ -48,14 +45,13 @@ function initPoints(){
 
 function tick(){
   ctx.clearRect(0,0,w,h);
-  // subtle vignette
+
   const grd = ctx.createRadialGradient(w*0.8, h*0.1, 0, w*0.8, h*0.1, Math.max(w,h)*0.9);
   grd.addColorStop(0,'rgba(138,92,255,0.12)');
   grd.addColorStop(1,'rgba(0,0,0,0)');
   ctx.fillStyle = grd;
   ctx.fillRect(0,0,w,h);
 
-  // animate points
   for(const p of points){
     p.x += p.vx;
     p.y += p.vy;
@@ -63,7 +59,6 @@ function tick(){
     if(Math.abs(p.y - p.oy) > 12*dpr) p.vy *= -1;
   }
 
-  // draw links
   ctx.lineWidth = 1 * dpr;
   for(let i=0;i<points.length;i++){
     for(let j=i+1;j<i+6 && j<points.length;j++){
@@ -81,7 +76,6 @@ function tick(){
     }
   }
 
-  // draw points
   for(const p of points){
     ctx.fillStyle = 'rgba(138,92,255,0.8)';
     ctx.beginPath();
